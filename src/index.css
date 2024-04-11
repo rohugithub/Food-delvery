@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #FF4C24;
+}
+
+.explore-menu-list-item .active{
+    border: 2px solid #FF4C24;
+    padding: 5px;
+    border-radius: 50%;
+}
