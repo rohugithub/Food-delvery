@@ -5,7 +5,7 @@ import { assets } from '../../assets/assets'
 function Footer() {
   return (
     <>
-       <div className="footer w-full px-20 py-20 bg-[#323232] grid grid-cols-3 gap-80 ">
+       <div className="footer w-full px-20 py-20 bg-[#323232] grid grid-cols-3 gap-80 "  id="Footer-part">
       <div className=" Footer-conta1 cursor-pointer">
          <img src={assets.logo} alt="" />
          <p className=" w-[30vw] mt-5 text-white ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero reiciendis corporis minus illum quibusdam fuga quidem velit quam inventore totam. Alias temporibus explicabo molestiae illum!</p>

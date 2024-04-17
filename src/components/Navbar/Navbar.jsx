@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { assets } from '../../assets/assets'
 import { Link } from 'react-router-dom'
 
+
 function Navbar({setShowLogin}) {
     
 const [Menu, setMenu] = useState('menu')
@@ -12,10 +13,10 @@ const [Menu, setMenu] = useState('menu')
       <Link to='/'><img src={assets.logo} alt="" /></Link>    
        </div>
        <ul className=' flex items-center gap-10 capitalize font-["gilroy"] navbar-menu cursor-pointer'>
-        <li onClick={()=>setMenu("Home")}  className={Menu==="Home"?"active":""} > <Link to='/'> Home</Link> </li>
-        <li onClick={()=>setMenu("menu")}  className={Menu==="menu"?"active":""}> menu </li>
-        <li onClick={()=>setMenu("mobile-app")}  className={Menu==="mobile-app"?"active":""}>mobile-app</li>
-        <li onClick={()=>setMenu("contact-us")}  className={Menu==="contact-us"?"active":""}>contact-us </li>
+        <Link to='/' onClick={()=>setMenu("Home")}  className={Menu==="Home"?"active":""} > Home </Link>
+        <a href='#Explore-menu' onClick={()=>setMenu("menu")}  className={Menu==="menu"?"active":""}> menu </a>
+        <a href='#App-download' onClick={()=>setMenu("mobile-app")}  className={Menu==="mobile-app"?"active":""}>mobile-app</a>
+        <a href='#Footer-part' onClick={()=>setMenu("contact-us")}  className={Menu==="contact-us"?"active":""}> contact-us </a>
        </ul>
        <div className='search-icon flex gap-12 h-6'>
          <img src={assets.search_icon} alt="" />
